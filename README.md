@@ -2,33 +2,42 @@
 
 A high-performance, modular computer vision system designed for real-time target detection and tracking.
 
-## Overview
+## Overview (English)
 
 Ai_Aimbot is a Python-based project that combines fast screen capturing with YOLOv8 object detection and humanized mouse control. It is designed to be efficient, undetectable, and highly customizable.
 
-### Key Modules
+## Project Overview (Darija)
+Hada wa7ed l-moussa3id d l-aim (Aimbot) kheddam b-l-AI, moussami3 bach i-detecti l-enemies f l-al3ab b-wa7ed l-mantiq d l-Hardware-level bypass. L-hadaf l-asassi mnnu houwa l-ba7t f moustawa s-sor3a d l-Inference AI o kifach n-commander l-mouse b-tariqa "Human-like" (machi robotic) bach l-anti-cheats ma-i-3iyquch.
 
-- **Screen Capture (`screen_capture.py`)**: A highly optimized module using `mss` to capture a specific Region of Interest (ROI) at the center of the screen at high frame rates (supporting 60+ FPS on native hardware).
-- **YOLOv8 Detection (`detector.py`)**: Wraps the `ultralytics` YOLOv8 model to detect specific targets (e.g., the 'person' class) and calculate their relative distance from the center of the screen.
-- **Async Mouse Control (`mouse_controller.py`)**: Provides asynchronous, non-blocking mouse movement using `win32api`. Features human-like smoothing with jitter and interpolation to bypass simple heuristic detection.
-- **Visual Debug (`debug.py`)**: A diagnostic tool that provides a real-time overlay window with bounding boxes, FOV radius indicators, and tracking mathematics.
+### Core Architecture (Modules)
+L-project m-qassem l-ajza2 m-frouqa (Modular Design) bach i-koun optimized s7i7:
 
-## Requirements
+- **High-Speed Screen Capture (`screen_capture.py`)**: Kiy-jbed s-sowar mn l-xaxa b-wa7ed l-sor3a khayaliya (ROI 400x400) kadd-wsal l-aktar mn 200 FPS f l-al3ab.
+- **Neural Network Inference (`detector.py`)**: Kiy-khdem b-l-model YOLOv8 (You Only Look Once) bach i-identifiyi l-"person" targets f l-waqt l-7aqiqi o i-7seb l-messafa binn l-center d l-xaxa o l-viktima (dx, dy).
+- **Asynchronous Mouse Controller (`mouse_controller.py`)**: Hada houwa l-moukh d l-automation. Kiy-khdem b-wa7ed l-background thread (Threaded) bach ma-i-tqelch l-AI detection. Kiy-sta3mel:
+    - **Humanized Smoothing**: Kiy-qsem l-7araka l-khoutouat sghira.
+    - **Random Jitter**: Kiy-zid "Nchf" (Jitter) sghir bach l-7araka t-ban b7al d bnadm.
+    - **FOV Constraint**: Ma-kiy-t-7errek l-aim ghir ila kan l-enemy wast wa7ed l-daira (FOV) m-7edd-da.
+- **Visual Debugger (`debug.py`)**: Window kadd-biyyen l-khedma d l-AI f l-waqt l-7aqiqi m3a bounding boxes khadrin o daira d l-FOV.
 
-The project requires Python 3.x and the following libraries:
+### Technical Stack
+- **Language**: Python
+- **AI Model**: YOLOv8 (Ultralytics)
+- **Libraries**: OpenCV, MSS (for fast capture), PyWin32 (low-level input)
+- **Hardware Compatibility**: Designed for Digispark ATtiny85 for physical hardware bypass.
 
-- `mss`: For fast screen capturing.
-- `numpy`: For numerical computations and image representation.
-- `opencv-python`: For image processing and visual debugging.
-- `ultralytics`: For YOLOv8 object detection.
-- `pywin32`: For low-level Windows API access (mouse control).
+### Educational Goals
+Hada project d-pentesting o automation kiy-biyyen:
+1. Kifach n-optimiziw l-models d l-AI bach i-khdmou f low-spec hardware (i5 4th Gen / NVIDIA Quadro).
+2. Kifach t-dar l-communication binn l-Python o l-Hardware (Digispark).
+3. L-dirassa d l-vulnerabilities f s-systems d l-Anti-cheat.
 
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/Ai_Aimbot.git
-   cd Ai_Aimbot
+   git clone https://github.com/NourdineElmassaoudi/AI_Aimbot.git
+   cd AI_Aimbot
    ```
 
 2. Install dependencies:
@@ -37,9 +46,6 @@ The project requires Python 3.x and the following libraries:
    ```
 
 ## Usage
-
-### Continuous Detection & Movement
-(Integration script coming soon)
 
 ### Visual Debug Mode
 To verify the detection and tracking logic visually:
