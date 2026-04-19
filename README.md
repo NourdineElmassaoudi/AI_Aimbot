@@ -7,8 +7,8 @@ A high-performance, modular computer vision system designed for real-time target
 Ai_Aimbot is a Python-based project that combines fast screen capturing with YOLOv8 object detection and humanized mouse control. It is designed to be efficient, undetectable, and highly customizable.
 
 ## Project Overview (Darija)
-Hada wa7ed l-moussa3id d l-aim (Aimbot) kheddam b-l-AI, moussami3 bach i-detecti l-enemies f l-al3ab b-wa7ed l-mantiq d l-Hardware-level bypass. L-hadaf l-asassi mnnu houwa l-ba7t f moustawa s-sor3a d l-Inference AI o kifach n-commander l-mouse b-tariqa "Human-like" (machi robotic) bach l-anti-cheats ma-i-3iyquch.
-
+Hada wa7ed l-moussa3id d l-aim (Aimbot) kheddam b-l-AI, moussamam bach i-detecti l-enemies f l-al3ab b-wa7ed l-mantiq d l-Hardware-level bypass. L-hadaf l-asassi mnnu houwa l-ba7t f moustawa s-sor3a d l-Inference AI o kifach n-commander l-mouse b-tariqa "Human-like" (machi robotic) bach l-anti-cheats ma-i-3iyquch.
+For education (Za3ma)LOL
 ### Core Architecture (Modules)
 L-project m-qassem l-ajza2 m-frouqa (Modular Design) bach i-koun optimized s7i7:
 
